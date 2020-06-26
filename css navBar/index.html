@@ -1,0 +1,134 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>E-Portfolio</title>
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+     <link rel="stylesheet" href="stylesheet.css">
+     <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+
+      </head>
+    <body>
+
+
+
+
+<!-- logo -->
+            <div class="container">
+              <div id="logo"><a href="loading index.html"</a><img src="dolphine.png" alt="delphinity logo"></div>
+
+                <!-- Knop voor het menu en de links erin-->
+              <div class="navigation-wrapper">
+                  <div class="navigation-button">
+                      <i class="fa fa-bars"></i>
+              </div>
+              <div class="navigation-menu">
+                <ul>
+                  <li> <a href="loading index.html">HOME </a></li>
+                  <li> <a href="loading About_me.html">ABOUT ME</a></li>
+                  <li> <a href="loading THIS SITE.html">THIS SITE </a></li>
+                  <li> <a href="loading What_can_I_Do.html">WHAT CAN I DO FOR YOU </a></li>
+                  <li> <a href="loading Projects.html">PROJECTS </a> </li>
+                  <li> <a href="loading Contact.html">CONTACT </a></li>
+
+                </ul>
+              </div>
+            </div>
+
+            <!-- witte tekst in de pagina -->
+            <section class="hero">
+              <h1>E-Portfolio <br>
+                <span>Niek Kik</span></h1>
+
+                <!-- Knoppen -->
+                  <div class="button">
+                      <a href="About me.HTML" class="btn1">Who am I?</a>
+                      <a href="Contact.HTML" class="btn2">I want to do business</a>
+
+                  </div>
+
+                <!-- Einde knoppen -->
+
+            </section>
+
+          </div>
+
+          <!-- Navbar menu script -->
+          <script>
+        var navButton = document.querySelector('.navigation-button');
+    var navMenu = document.querySelector('.navigation-menu');
+    var win = window;
+
+    function openMenu(event) {
+
+      navButton.classList.toggle('active');
+      navMenu.classList.toggle('active');
+
+      event.preventDefault();
+      event.stopImmediatePropagation();
+    }
+
+    function closeMenu(event) {
+      if (navButton.classList.contains('active')) {
+        navButton.classList.remove('active');
+        navMenu.classList.remove('active');
+      }
+    }
+      navButton.addEventListener('click', openMenu, false);
+
+    win.addEventListener('click',closeMenu, false);
+
+    </script>
+<!-- Einde navbar menu script -->
+
+<!-- Foto en tekst met link naar scalda -->
+    <img src="Niek.png" id="Niek">
+    <br><br><br><br><br><br><br><br><br>
+    <div id="Tekst">
+      First year Software Developer at <a href="https://www.scalda.nl"><p id="Scalda">Scalda, Vlissingen</p></a>
+    </div>
+
+<!-- google maps kaart -->
+ <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2486.3654557002747!2d3.5870777515122017!3d51.45144627952586!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c499567c245b47%3A0x699a5cb15f278a89!2sScalda!5e0!3m2!1snl!2snl!4v1576745448655!5m2!1snl!2snl" id="Scalda_Locatie" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+
+<!-- Klok -->
+<script>
+    function startTime(){
+        var today =new Date();
+        var h =today.getHours();
+        var m =today.getMinutes();
+        var s =today.getSeconds();
+        var session ="AM"
+
+        if(h==0){
+          h =12;
+        }
+        if(h > 12) {
+          h = h - 12;
+          session = "PM"
+        }
+
+        h = (h < 10) ? "0" + h : h;
+        m = (m < 10) ? "0" + m : m;
+        s = (s < 10) ? "0" + s : s;
+
+        var time = h + ":" + m + ":" + s + " " + session;
+        document.getElementById("clock").innerText = time;
+        document.getElementById("clock").textContent = time;
+      setTimeout(startTime, 500);
+
+  }
+  function checkTime(i){
+    if(i<10) {i = "0" + i};
+    return i;
+  }
+</script>
+
+<body onload="startTime()">
+  <div id="clock"</div>
+</body>
+<!-- einde klok -->
+    </body>
+    </html>

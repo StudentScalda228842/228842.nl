@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>THIS SITE</title>
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+ <link rel="stylesheet" href="stylesheet4.css">
+ <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+
+  </head>
+  <div id="textfieldleft">
+    On this page you can see what programming languages I have used to create this site. <br>
+    Feel free to look at the source code but keep in mind: This is my first published webpage...
+  </div>
+<body>
+
+
+        <div class="container">
+          <div id="logo"><a href="loading index.html"</a><img src="dolphine.png" alt="delphinity logo"></div>
+          <div class="navigation-wrapper">
+              <div class="navigation-button">
+                  <i class="fa fa-bars"></i>
+          </div>
+          <div class="navigation-menu">
+            <ul>
+              <li> <a href="loading index.html">HOME </a></li>
+              <li> <a href="loading About_me.html">ABOUT ME</a></li>
+              <li> <a href="loading THIS SITE.html">THIS SITE </a></li>
+              <li> <a href="loading What_can_I_Do.html">WHAT CAN I DO FOR YOU </a></li>
+              <li> <a href="loading Projects.html">PROJECTS </a> </li>
+              <li> <a href="loading Contact.html">CONTACT </a></li>
+
+
+            </ul>
+          </div>
+        </div>
+
+        <section class="hero">
+          <h1><br>
+            <span>THIS SITE</span></h1>
+        </section>
+
+      </div>
+      <script>
+    var navButton = document.querySelector('.navigation-button');
+var navMenu = document.querySelector('.navigation-menu');
+var win = window;
+
+function openMenu(event) {
+
+  navButton.classList.toggle('active');
+  navMenu.classList.toggle('active');
+
+  event.preventDefault();
+  event.stopImmediatePropagation();
+}
+
+function closeMenu(event) {
+  if (navButton.classList.contains('active')) {
+    navButton.classList.remove('active');
+    navMenu.classList.remove('active');
+  }
+}
+  navButton.addEventListener('click', openMenu, false);
+
+win.addEventListener('click',closeMenu, false);
+
+</script>
+<h1>amount of language used</h1>
+<div class="container">
+<div class="card">
+  <div class="box">
+    <div class="percent">
+      <svg>
+        <circle cx="70" cy="70" r="70"></circle>
+        <circle cx="70" cy="70" r="70"></circle>
+      </svg>
+      <div class="number">
+        <h2>40 <span>%</span></h2>
+      </div>
+    </div>
+      <h2 class="text">HTML</h2>
+    </div>
+  </div>
+    <div class="card">
+      <div class="box">
+        <div class="percent">
+          <svg>
+            <circle cx="70" cy="70" r="70"></circle>
+            <circle cx="70" cy="70" r="70"></circle>
+          </svg>
+          <div class="number">
+            <h2>45 <span>%</span></h2>
+          </div>
+        </div>
+          <h2 class="text">CSS</h2>
+        </div>
+      </div>
+        <div class="card">
+          <div class="box">
+            <div class="percent">
+              <svg>
+                <circle cx="70" cy="70" r="70"></circle>
+                <circle cx="70" cy="70" r="70"></circle>
+              </svg>
+              <div class="number">
+                <h2>15 <span>%</span></h2>
+              </div>
+            </div>
+              <h2 class="text">JAVASCRIPT</h2>
+            </div>
+          </div>
+</div>
+
+
+</body>
+</html>

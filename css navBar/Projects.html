@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>PROJECTS</title>
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+ <link rel="stylesheet" href="stylesheet9.css">
+ <link rel="stylesheet" href="stylesheet7.css">
+ <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+
+  </head>
+<body>
+<div id="textfield">
+  Here you can see what I have been working on the past year. <br>
+  I selected the most interesting programs I have build. I do have more projects, but those are not impressive as the big projects. <br> <br>
+  Just click the icon in the middle of the screen to go to my github account. after you have clicked on the icon, click on the repository "Projects" to view the source code of the programs.
+</div>
+
+        <div class="container">
+          <div id="logo"><a href="loading index.html"</a><img src="dolphine.png" alt="delphinity logo"></div>
+          <div class="navigation-wrapper">
+              <div class="navigation-button">
+                  <i class="fa fa-bars"></i>
+          </div>
+          <div class="navigation-menu">
+            <ul>
+              <li> <a href="loading index.html">HOME </a></li>
+              <li> <a href="loading About_me.html">ABOUT ME</a></li>
+              <li> <a href="loading THIS SITE.html">THIS SITE </a></li>
+              <li> <a href="loading What_can_I_Do.html">WHAT CAN I DO FOR YOU </a></li>
+              <li> <a href="loading Projects.html">PROJECTS </a> </li>
+              <li> <a href="loading Contact.html">CONTACT </a></li>
+
+
+            </ul>
+          </div>
+        </div>
+        <section class="hero">
+          <h1><br>
+            <span>PROJECTS</span></h1>
+
+
+
+
+        </section>
+
+      </div>
+      <script>
+    var navButton = document.querySelector('.navigation-button');
+var navMenu = document.querySelector('.navigation-menu');
+var win = window;
+
+function openMenu(event) {
+
+  navButton.classList.toggle('active');
+  navMenu.classList.toggle('active');
+
+  event.preventDefault();
+  event.stopImmediatePropagation();
+}
+
+function closeMenu(event) {
+  if (navButton.classList.contains('active')) {
+    navButton.classList.remove('active');
+    navMenu.classList.remove('active');
+  }
+}
+  navButton.addEventListener('click', openMenu, false);
+
+win.addEventListener('click',closeMenu, false);
+
+</script>
+
+  <div class="social-menu">
+      <ul>
+        <li><a href="https://github.com/StudentScalda228842"><i class="fa fa-github"></i></a></li>
+      </ul>
+    </div>
+</body>
+</html>

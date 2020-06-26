@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+ <title>What can I do for you</title>
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+ <link rel="stylesheet" href="stylesheet5.css">
+ <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+
+  </head>
+<body>
+
+
+        <div class="container">
+          <div id="logo"><a href="loading index.html"</a><img src="dolphine.png" alt="delphinity logo"></div>
+          <div class="navigation-wrapper">
+              <div class="navigation-button">
+                  <i class="fa fa-bars" onclick="hideCard"></i>
+          </div>
+          <div class="navigation-menu">
+            <ul>
+              <li> <a href="loading index.html">HOME </a></li>
+              <li> <a href="loading About_me.html">ABOUT ME</a></li>
+              <li> <a href="loading THIS SITE.html">THIS SITE </a></li>
+              <li> <a href="loading What_can_I_Do.html">WHAT CAN I DO FOR YOU </a></li>
+              <li> <a href="loading Projects.html">PROJECTS </a> </li>
+              <li> <a href="loading Contact.html">CONTACT </a></li>
+
+
+            </ul>
+          </div>
+        </div>
+        <section class="hero">
+          <h1><br>
+            <span>WHAT CAN I DO FOR YOU</span></h1>
+
+
+
+
+        </section>
+
+      </div>
+
+
+<div id="new_dialog">
+
+Currently I have the knowledge of 2 programming languages: Java and C#. </br>I can make basic OOP based programs with both languages. </br>
+Furthermore I can make a database with MySql and I can make websites. </br>Last but not least I can make mobile phone apps with Flutter app development.</br>
+Im always trying to learn more about programming and how it can impact my life.
+</div>
+
+
+
+
+
+
+<body id="body2">
+
+<div class="whereisthebox">
+
+<div class="box">
+     <div class="card">
+       <div class="imgBx">
+           <img src="java.png" alt="java logo">
+       </div>
+       <div class="details">
+           <h2>Java<br></h2>
+       </div>
+     </div>
+
+      <div class="card">
+        <div class="imgBx">
+           <img src="Csharp.png" alt="C# logo">
+        </div>
+        <div class="details">
+           <h2>C#<br></h2>
+         </div>
+      </div>
+
+      <div class="card">
+        <div class="imgBx">
+           <img src="html.jpg" alt="HTML/CSS">
+        </div>
+        <div class="details">
+           <h2>HTML/CSS/JS<br></h2>
+         </div>
+      </div>
+
+      <div class="card">
+        <div class="imgBx">
+           <img src="MySql.jpg" alt="MySql logo">
+        </div>
+        <div class="details">
+           <h2>MySql</h2>
+         </div>
+      </div>
+
+      <div class="card">
+        <div class="imgBx">
+           <img src="flutter.png" alt="flutter logo">
+        </div>
+        <div class="details">
+           <h2>Flutter</h2>
+         </div>
+      </div>
+
+ </div>
+
+</div>
+</body>
+
+
+
+
+      <script>
+    var navButton = document.querySelector('.navigation-button');
+var navMenu = document.querySelector('.navigation-menu');
+var win = window;
+
+function openMenu(event) {
+
+  navButton.classList.toggle('active');
+  navMenu.classList.toggle('active');
+
+
+  event.preventDefault();
+  event.stopImmediatePropagation();
+
+}
+
+function closeMenu(event) {
+  if (navButton.classList.contains('active')) {
+    navButton.classList.remove('active');
+    navMenu.classList.remove('active');
+  }
+}
+  navButton.addEventListener('click', openMenu, false);
+
+win.addEventListener('click',closeMenu, false);
+
+
+function hideCard() {
+  if (openMenu()) {
+    document.getElementById("box").style.zIndex = "-1";
+  }
+}
+
+</script>
+
+</body>
+</html>
